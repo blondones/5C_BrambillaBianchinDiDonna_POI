@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="Pagina-1" id="6-uIPwmchD4a8Nkgu4xb">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-11" value="Map.js" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="455" width="210" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-12" value="+ GenerateMap () : void&lt;div&gt;+ Build () : void&amp;nbsp;&lt;br&gt;+ Render () : void&lt;br&gt;+ addPlace (place) : void&amp;nbsp;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getPlaces () : places&lt;/span&gt;&lt;div&gt;+ addAllPlaces&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PDCx3JyU7XLu6EtrBzmf-11">
+          <mxGeometry y="50" width="210" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-13" value="Login.js" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="210" height="130" as="geometry">
+            <mxRectangle x="30" y="100" width="90" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-14" value="+ createLogin () : void&lt;br&gt;&lt;div&gt;+ login (&amp;nbsp;username, password) : void&lt;/div&gt;&lt;div&gt;+ isLogged () :&amp;nbsp;isLogged&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PDCx3JyU7XLu6EtrBzmf-13">
+          <mxGeometry y="50" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-15" value="Navigator.js" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="100" width="170" height="130" as="geometry">
+            <mxRectangle x="510" y="100" width="110" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-16" value="+ createNavigator&lt;div&gt;+ render () : void&amp;nbsp;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PDCx3JyU7XLu6EtrBzmf-15">
+          <mxGeometry y="50" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-21" value="TimeLine.js" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="455" width="170" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-22" value="+ render () : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PDCx3JyU7XLu6EtrBzmf-21">
+          <mxGeometry y="50" width="170" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-25" value="Fetch" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="290" width="180" height="130" as="geometry">
+            <mxRectangle x="290" y="290" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-26" value="+ token&lt;div&gt;+ build (inputToken) : void&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ setData(key,data) : promise&lt;/div&gt;&lt;div&gt;+ getData (key) : promise&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="PDCx3JyU7XLu6EtrBzmf-25">
+          <mxGeometry y="50" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PDCx3JyU7XLu6EtrBzmf-28" value="usa" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="310" y="160" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tWeno6-5v6hL2MDRHCYz-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PDCx3JyU7XLu6EtrBzmf-14" target="PDCx3JyU7XLu6EtrBzmf-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="350" as="sourcePoint" />
+            <mxPoint x="370" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="190" />
+              <mxPoint x="380" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

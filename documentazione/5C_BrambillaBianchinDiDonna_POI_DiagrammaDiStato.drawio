@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.4">
+  <diagram name="Pagina-1" id="H6lpOMyDpfrtWkt-IldC">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mlvni5lRdeL_D00-UjSX-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="70" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-3" value="load pagina" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="118" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-4" target="mlvni5lRdeL_D00-UjSX-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-4" value="pagina caricata" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="85" y="170" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-5" target="mlvni5lRdeL_D00-UjSX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-5" value="luoghi caricati" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="85" y="290" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-6" target="mlvni5lRdeL_D00-UjSX-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-6" value="render effettuata" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="85" y="420" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-9" value="fetch luoghi" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="145" y="250" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-11" value="render" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="155" y="378" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-12" target="mlvni5lRdeL_D00-UjSX-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-12" value="loggato" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry y="550" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-13" value="non loggato" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="180" y="555" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-15" value="check login" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="135" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-6" target="mlvni5lRdeL_D00-UjSX-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-19" target="mlvni5lRdeL_D00-UjSX-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-19" value="luogo inserito" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry y="650" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-20" target="mlvni5lRdeL_D00-UjSX-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-20" value="luogo caricato" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry y="750" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-22" value="inserimento luogo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="610" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-24" value="caricamento luogo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="710" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mlvni5lRdeL_D00-UjSX-13" target="mlvni5lRdeL_D00-UjSX-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-26" value="login" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="550" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mlvni5lRdeL_D00-UjSX-30" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="35" y="865" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
