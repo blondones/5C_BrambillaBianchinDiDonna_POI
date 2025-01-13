@@ -1,12 +1,7 @@
 export const generateMap = () => {
     let places = [
        {
-          name: "Piazza del Duomo",
-          coords: [45.4639102, 9.1906426],
-          dataInc : "27-02-2024",
-          oraInc : "8:20",
-          mortiInc : 4,
-          feritiInc : 4
+        //template del posto
        }
     ];
  
