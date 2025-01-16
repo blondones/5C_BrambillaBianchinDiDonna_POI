@@ -1,5 +1,5 @@
 export const createLogin = () => {
-    const myToken = "01aeec9c-9533-46c4-85e1-dfc449335c90"; // token ottenuto via mail 
+    const myToken = "01aeec9c-9533-46c4-85e1-dfc449335c90"; 
     const inputName = document.querySelector("#name");
     const inputPassword = document.querySelector("#password");
     const loginButton = document.querySelector("#login");

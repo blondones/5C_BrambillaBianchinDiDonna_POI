@@ -1,4 +1,10 @@
-#map { width: 600px; height: 400px; }
+#map {
+     width: 600px;
+     height: 400px; 
+     margin-top: 20px;
+     margin-right: 400px;
+    }
+
 .hide {
     display: none;
 }
