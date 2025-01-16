@@ -1,13 +1,13 @@
 const hide = (element) => {
-    element.classList.add("d-none");
+    element.classList.add("hide");
  }
  
  const show = (element) => {
-    element.classList.remove("d-none");
+    element.classList.remove("hide");
  }
  
  export const createNavigator = (parentElement) => {
-    const pages = Array.from(parentElement.querySelectorAll(".page"));
+    const pages = Array.from(document.querySelectorAll(".pages"));
     
     const render = () => {
        const url = new URL(document.location.href);
