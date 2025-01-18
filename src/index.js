@@ -1,8 +1,8 @@
-import { generateMap } from "/5C_BrambillaBianchinDiDonna_POI/src/components/map.js";
-import { createLogin } from "/5C_BrambillaBianchinDiDonna_POI/src/components/login.js";
-import { fetchComponent } from "/5C_BrambillaBianchinDiDonna_POI/src/components/fetch.js";
-import { createTable } from "/5C_BrambillaBianchinDiDonna_POI/src/components/table.js";
-import { createNavigator } from "/5C_BrambillaBianchinDiDonna_POI/src/components/navigator.js";
+import { generateMap } from "/src/components/map.js";
+import { createLogin } from "/src/components/login.js";
+import { fetchComponent } from "/src/components/fetch.js";
+import { createTable } from "/src/components/table.js";
+import { createNavigator } from "/src/components/navigator.js";
 
 const alpiCarnicheButton = document.querySelector("#alpiCarnicheButton");
 const alpiGiulieButton = document.querySelector("#alpiGiuliebutton");
@@ -16,52 +16,52 @@ const triesteButton = document.querySelector("#triesteButton");
 const villaGiustiButton = document.querySelector("#villaGiustiButton");
 console.log("osafj");
 
-/*let map = generateMap(document.getElementById("map"));
+let map = generateMap(document.getElementById("map"));
 map.build();
-map.render();*/
+map.render();
 
 const nav = createNavigator(document.getElementById("contenitore"));
 
 let places =[ 
      {
         descrizione: "descrizione alpi carniche",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/Dolomiti-Alpi Carniche.jpg",
+        img: "/data/placesImage/Dolomiti-Alpi Carniche.jpg",
     },
     {
         descrizione: "descrizione alpi giulie",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/Alpi Giulie-Isonzo-Basso Friuli.jpg",
+        img: "/data/placesImage/Alpi Giulie-Isonzo-Basso Friuli.jpg",
     },
      {
         descrizione: "descrizione garda altipiani",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/garda altipiani.jpg",
+        img: "/data/placesImage/garda altipiani.jpg",
     },
      {
         descrizione: " descrizione medio basso piave",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/medi-basso piave.jpg",
+        img: "/data/placesImage/medi-basso piave.jpg",
     },
      {
         descrizione: "descrizione monte grappa",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/monte grappa.jpg",
+        img: "/data/placesImage/monte grappa.jpg",
     },
     {
         descrizione: "descrizione monte san michele",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/monte san michele.jpg",
+        img: "/data/placesImage/monte san michele.jpg",
     },
     {
         descrizione: "descrizione ortles cevedale adamello",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/ortles cevedale adamello.jpg",
+        img: "/data/placesImage/ortles cevedale adamello.jpg",
     },
     {
         descrizione: "descrizione trieste",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/trieste.jpg",
+        img: "/data/placesImage/trieste.jpg",
     },
     {
         descrizione: "descrizione villa giusti",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/villa giusti.jpg",
+        img: "/data/placesImage/villa giusti.jpg",
     },
     {
         descrizione: "descrizione vittorio veneto",
-        img: "/5C_BrambillaBianchinDiDonna_POI/data/placesImage/vittorio veneto.jpg",
+        img: "/data/placesImage/vittorio veneto.jpg",
     },
 ]
 
