@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.adminTable-body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   color: #000000;

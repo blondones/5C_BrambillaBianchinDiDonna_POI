@@ -95,6 +95,8 @@ ortlesCevedaleAdamelloButton.onclick = () => {
         `;
     
 };
+console.log(triesteButton);
+
 triesteButton.onclick = () => {
     let trieste = document.querySelector("#trieste");
     console.log("ckdò")
@@ -104,6 +106,7 @@ triesteButton.onclick = () => {
         `;
     
 };
+
 villaGiustiButton.onclick = () => {
     let villaGiusti = document.querySelector("#villaGiusti");
     console.log("ckdò")
