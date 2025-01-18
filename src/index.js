@@ -17,7 +17,7 @@ const villaGiustiButton = document.querySelector("#villaGiustiButton");
 console.log("osafj");
 
 let map = generateMap(document.getElementById("map"));
-
+let table = createTable(document.querySelector("#tabella"));
 
 const nav = createNavigator(document.getElementById("contenitore"));
 
@@ -29,6 +29,13 @@ let places = f.getData("luoghi").then(res =>{
     console.log(res);
     map.build();
     map.render();
+    let array=map.getPlaces();
+    let tmp =[];
+    array.forEach(e =>{
+        tmp.push([e.name,e.descrizione])
+    })
+    table.build(tmp);
+    table.render()
 })
 
 

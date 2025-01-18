@@ -6,14 +6,14 @@ export const createTable = (parentElement) => {
       },
       render: () => {
         
-        let htmlTable = ""//colonne della tabella;
+        let htmlTable = "<table class='table table-bordered'>"//colonne della tabella;
         htmlTable += data.map((row) => 
           "<tr>" + row.map((col) => 
             "<td>" + col + "</td>"
           ).join("")
         ).join("") + "</tr>";
-        htmlTable += "</table";
-        parentElement.innerHTML = htmlTable;
+        htmlTable += "</table>";
+        parentElement.innerHTML += htmlTable;
       },
       getData : ()=>{
         return data;
