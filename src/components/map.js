@@ -1,11 +1,5 @@
-
-
 export const generateMap = (parentElement) => {
-   let places = [
-      
-   ];
-
-   
+   let places = [];
    const zoom = 6;
    const maxZoom = 19;
    let map; 
