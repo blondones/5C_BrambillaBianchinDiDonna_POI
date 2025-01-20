@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="/5C_BrambillaBianchinDiDonna_POI/htmlPages/styles/style.css">
-  <link rel="stylesheet" href="/5C_BrambillaBianchinDiDonna_POI/htmlPages/styles/login.css">
-  <link rel="stylesheet" href="/5C_BrambillaBianchinDiDonna_POI/htmlPages/styles/admin.css">
-  <link rel="stylesheet" href="/5C_BrambillaBianchinDiDonna_POI/htmlPages/styles/adminTable.css">
+  <link rel="stylesheet" href="/5C_BrambillaBianchinDiDonna_POI/htmlPages/styles/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
@@ -46,7 +43,6 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="alpiCarniche">
-
               Descrizione delle Dolomiti-Alpi Carniche.
             </div>
             <div class="modal-footer">
@@ -151,7 +147,7 @@
               <h1 class="modal-title fs-5" id="modalMedioBassoPiaveLabel">Medio-basso Piave</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div  class="modal-body" id="medioBassoPiave">
+            <div class="modal-body" id="medioBassoPiave">
               Descrizione del Medio-basso Piave.
             </div>
             <div class="modal-footer">
@@ -270,14 +266,10 @@
           <a href="#paginaLogin" style="text-decoration: none;">
             <button class="btn btn-success" id="adminButton">admin</button>
           </a>
-
         </div>
       </div>
     </div>
   </div>
-
-
-
 
   <div id="admin" class="pages hide">
     <div class="admin-container">
@@ -325,6 +317,9 @@
         <a href="#home" style="text-decoration: none;">
           <button type="button">Home</button>
         </a>
+        <a href="#adminTable" style="text-decoration: none;">
+          <button type="button">invio</button>
+        </a>
 
       </form>
     </div>
@@ -349,8 +344,8 @@
   </div>
 
   <div id="adminTable" class="pages hide">
-    <div class="container">
-      <table>
+    <div class="container" id="tabellaLuoghiAzioni">
+      <!--<table>
         <thead>
           <tr>
             <th>Luogo</th>
@@ -372,7 +367,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/Dolomiti-Alpi Carniche.jpg" alt="..."
                 style="width: 30%;">
               <p>Dolomiti-Alpi Carniche</p>
@@ -385,7 +379,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/garda altipiani.jpg" alt="..."
                 style="width: 30%;">
               <p>Garda Altipiani</p>
@@ -398,7 +391,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/medi-basso piave.jpg" alt="..."style="width: 30%;">
               <p>Medio-Basso Piave</p>
             </td>
@@ -410,7 +402,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/monte grappa.jpg" alt="..."
                 style="width: 30%;">
               <p>Monte Grappa</p>
@@ -423,7 +414,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/monte san michele.jpg" alt="..."
                 style="width: 30%;">
               <p>Monte San Michele</p>
@@ -436,7 +426,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/ortles cevedale adamello.jpg" alt="" style="width: 30%;">
               <p>Ortles Cevedale Adamello</p>
             </td>
@@ -448,7 +437,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/trieste.jpg" alt="..." style="width: 30%;">
               <p>Trieste</p>
             </td>
@@ -460,7 +448,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/villa giusti.jpg" alt="..." style="width: 30%;">
               <p>Villa Giusti</p>
             </td>
@@ -472,7 +459,6 @@
           </tr>
           <tr>
             <td>
-
               <img src="/5C_BrambillaBianchinDiDonna_POI/data/placesImage/vittorio veneto.jpg" alt="..."
                 style="width: 30%;">
               <p>Vittorio Veneto</p>
@@ -484,22 +470,15 @@
             </td>
           </tr>
         </tbody>
-      </table>
+      </table>-->
     </div>
   </div>
 
   <script type="module" src="/5C_BrambillaBianchinDiDonna_POI/src/index.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 </body>
-
 
 </html>

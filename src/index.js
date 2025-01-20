@@ -20,20 +20,27 @@ let map = generateMap(document.getElementById("map"));
 let table = createTable(document.querySelector("#tabella"));
 
 const nav = createNavigator(document.getElementById("contenitore"));
-
+let places ;
 let f = fetchComponent();
 f.build("a0280b00-7412-4acb-9722-ec76f61c5634");
 //f.setData("luoghi",map.getPlaces());
-let places = f.getData("luoghi").then(res =>{
+places = f.getData("luoghi").then(res =>{
+
     map.addAllPlaces(res);
+    let array=map.getPlaces();
+    let tmp2 =[];
+    array.forEach(e =>{
+        tmp2.push([e.img,e.name])
+    })
+    renderTable(document.querySelector("#tabellaLuoghiAzioni"),tmp2);
     console.log(res);
     map.build();
     map.render();
-    let array=map.getPlaces();
     let tmp =[];
     array.forEach(e =>{
         tmp.push([e.name,e.descrizione])
     })
+    
     table.build(tmp);
     table.render()
 })
@@ -132,6 +139,30 @@ vittorioVenetoButton.onclick = () => {
         `;
     
 };
+function renderTable(container, dataArray) {
+
+
+    let tableHTML = '<table>   <thead><tr><th>Luogo</th>   <th></th> <th>Azioni</th><th></th> </tr> </thead>';
+
+    dataArray.forEach((row, index) => {
+        tableHTML += `
+            <tr>
+                <td><img src="${row[0]}" alt="${row[1]}" style="width: 50px;"></td>
+                <td style="padding: 10px;">${row[1]}</td>
+                <td>  <a href="#admin" style="text-decoration: none;"> 
+                <button class="btn modifica" id="modifica${index + 1}">Modifica</button>
+                </a>
+                </td>
+                <td><button class="btn elimina" id="elimina${index + 1}">Elimina</button></td>
+            </tr>
+        `;
+    });
+
+    tableHTML += '</table>';
+
+    container.innerHTML = tableHTML;
+}
+
 
 
 createLogin();

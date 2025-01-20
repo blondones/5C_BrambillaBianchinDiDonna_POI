@@ -34,7 +34,6 @@ export const createLogin = () => {
   };
 
   loginButton.onclick = () => {
-    console.log("pd")
       const username = inputName.value;
       const password = inputPassword.value;
       
@@ -52,7 +51,7 @@ export const createLogin = () => {
           console.error("Errore durante il login:", err);
           errorMessage.classList.remove("d-none");
       });
-
+      
       inputName.value = "";
       inputPassword.value = "";
   };
