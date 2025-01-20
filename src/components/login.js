@@ -34,7 +34,6 @@ export const createLogin = () => {
   };
 
   loginButton.onclick = () => {
-    console.log("pd")
       const username = inputName.value;
       const password = inputPassword.value;
       
