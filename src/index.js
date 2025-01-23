@@ -3,6 +3,7 @@ import { createLogin } from "/5C_BrambillaBianchinDiDonna_POI/src/components/log
 import { fetchComponent } from "/5C_BrambillaBianchinDiDonna_POI/src/components/fetch.js";
 import { createTable } from "/5C_BrambillaBianchinDiDonna_POI/src/components/table.js";
 import { createNavigator } from "/5C_BrambillaBianchinDiDonna_POI/src/components/navigator.js";
+let invioButton = document.querySelector("#invioButton");
 
 const alpiCarnicheButton = document.querySelector("#alpiCarnicheButton");
 const alpiGiulieButton = document.querySelector("#alpiGiuliebutton");
@@ -15,17 +16,20 @@ const vittorioVenetoButton = document.querySelector("#vittorioVenetoButton");
 const triesteButton = document.querySelector("#triesteButton");
 const villaGiustiButton = document.querySelector("#villaGiustiButton");
 console.log("osafj");
-
+let currentId;
 let map = generateMap(document.getElementById("map"));
 let table = createTable(document.querySelector("#tabella"));
-
+let count=0;
 const nav = createNavigator(document.getElementById("contenitore"));
 let places ;
 let f = fetchComponent();
 f.build("a0280b00-7412-4acb-9722-ec76f61c5634");
+let currentPlaces;
+map.build();
 //f.setData("luoghi",map.getPlaces());
+const refresh =()=>{
 places = f.getData("luoghi").then(res =>{
-
+    currentPlaces=res;
     map.addAllPlaces(res);
     let array=map.getPlaces();
     let tmp2 =[];
@@ -34,7 +38,7 @@ places = f.getData("luoghi").then(res =>{
     })
     renderTable(document.querySelector("#tabellaLuoghiAzioni"),tmp2);
     console.log(res);
-    map.build();
+   // map.build();
     map.render();
     let tmp =[];
     array.forEach(e =>{
@@ -44,9 +48,12 @@ places = f.getData("luoghi").then(res =>{
     table.build(tmp);
     table.render()
 })
+}
+refresh();
 
 
 alpiCarnicheButton.onclick = () => {
+    refresh();
     let alpiCarniche = document.querySelector("#alpiCarniche");
         alpiCarniche.innerHTML = `
             <img src="${map.getPlaces()[0].img}" alt="Immagine Alpi Carniche" style="width: 50%;" />
@@ -56,6 +63,7 @@ alpiCarnicheButton.onclick = () => {
     
 };
 alpiGiulieButton.onclick = () => {
+    refresh();
     let alpiGiulie = document.querySelector("#alpiGiulie");
     console.log("ckdò")
         alpiGiulie.innerHTML = `
@@ -65,6 +73,7 @@ alpiGiulieButton.onclick = () => {
     
 };
 gardaAltipianiButton.onclick = () => {
+    refresh();
     let gardaAltipiani = document.querySelector("#gardaAltipiani");
     console.log("ckdò")
     gardaAltipiani.innerHTML = `
@@ -74,6 +83,7 @@ gardaAltipianiButton.onclick = () => {
     
 };
 medioBassoPiaveButton.onclick = () => {
+    refresh();
     let medioBassoPiave = document.querySelector("#medioBassoPiave");
     console.log("ckdò")
     medioBassoPiave.innerHTML = `
@@ -83,6 +93,7 @@ medioBassoPiaveButton.onclick = () => {
     
 };
 monteGrappaButton.onclick = () => {
+    refresh();
     let monteGrappa = document.querySelector("#monteGrappa");
     console.log("ckdò")
     monteGrappa.innerHTML = `
@@ -92,6 +103,7 @@ monteGrappaButton.onclick = () => {
     
 };
 monteSanMicheleButton.onclick = () => {
+    refresh();
     let monteSanMichele = document.querySelector("#monteSanMichele");
     console.log("ckdò")
     monteSanMichele.innerHTML = `
@@ -101,6 +113,7 @@ monteSanMicheleButton.onclick = () => {
     
 };
 ortlesCevedaleAdamelloButton.onclick = () => {
+    refresh();
     let ortlesCevedaleAdamello = document.querySelector("#ortlesCevedaleAdamello");
     console.log("ckdò")
     ortlesCevedaleAdamello.innerHTML = `
@@ -112,6 +125,7 @@ ortlesCevedaleAdamelloButton.onclick = () => {
 console.log(triesteButton);
 
 triesteButton.onclick = () => {
+    refresh();
     let trieste = document.querySelector("#trieste");
     console.log("ckdò")
     trieste.innerHTML = `
@@ -122,6 +136,7 @@ triesteButton.onclick = () => {
 };
 
 villaGiustiButton.onclick = () => {
+    refresh();
     let villaGiusti = document.querySelector("#villaGiusti");
     console.log("ckdò")
     villaGiusti.innerHTML = `
@@ -131,6 +146,7 @@ villaGiustiButton.onclick = () => {
     
 };
 vittorioVenetoButton.onclick = () => {
+    refresh();
     let vittorioVeneto = document.querySelector("#vittorioVeneto");
     console.log("ckdò")
     vittorioVeneto.innerHTML = `
@@ -150,10 +166,10 @@ function renderTable(container, dataArray) {
                 <td><img src="${row[0]}" alt="${row[1]}" style="width: 50px;"></td>
                 <td style="padding: 10px;">${row[1]}</td>
                 <td>  <a href="#admin" style="text-decoration: none;"> 
-                <button class="btn modifica" id="modifica${index + 1}">Modifica</button>
+                <button class="btn modifica" id="modifica${index}">Modifica</button>
                 </a>
                 </td>
-                <td><button class="btn elimina" id="elimina${index + 1}">Elimina</button></td>
+                <td><button class="btn elimina" id="elimina${index}">Elimina</button></td>
             </tr>
         `;
     });
@@ -161,8 +177,29 @@ function renderTable(container, dataArray) {
     tableHTML += '</table>';
 
     container.innerHTML = tableHTML;
+    let confermaButtons = document.querySelectorAll(".modifica");
+    
+  confermaButtons.forEach((button) => {
+    button.onclick = () => {
+    currentId = parseInt(button.id.replace("modifica", ""));
+      
+    
+    };
+  });
+  console.log(document.querySelectorAll(".modifica"))
 }
-
+invioButton.onclick=()=>{
+    let title =document.querySelector("#title");
+    let esito = document.querySelector("#esito")
+    let morti = document.querySelector("#morti");
+    let desc = document.querySelector("#description")
+   currentPlaces[currentId].name=title.value;
+   let descrizione = desc.value+"\nesito: "+esito.value+"\nmorti: "+morti.value;
+   currentPlaces[currentId].descrizione=descrizione;
+   f.setData("luoghi",currentPlaces);
+   refresh();
+   console.log(descrizione);
+}
 
 
 createLogin();
